@@ -1,0 +1,50 @@
+*{
+    font-family: sans-serif;
+}
+
+.bike-content{
+    max-width: 100%;
+    background-image: url(./images//BMW1.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.content {
+    margin-top: 10%;
+}
+.content h2{
+    color: red;
+    font-size: 34px;
+}
+.content h1{
+    font-size: 100px;
+    color: #222;
+    margin-top: -20px;
+}
+.content p{
+    font-weight: 500;
+    font-size: 24px;
+    color: #222;
+}
+.colour-select{
+    display: flex;
+    margin-top: 20px;
+}
+.colour-select div{
+    background-color: #333;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.colour-select #red{
+    background-color: red;
+}
+.colour-select #blue{
+    background-color: blue;
+}
+.colour-select #black{
+    background-color: black;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- main css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="w-25" src="./images/logo.png" alt="">
+          </a>
+          
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <div class="content">
+                    <h2>The BMW</h2>
+                    <H1 class="mt-2">G 310 R</H1>
+                    <p>The strength of the G 310 R is in its lightness and agility. the Bike Not only delivers fun in the big city tumult, but also when you are redefining the city limits when changing corners quickly</p>
+                    <h3>Choose Your Colour</h3>
+                    <div class="colour-select">
+                      <div id="red"></div>
+                      <div id="blue"></div>
+                      <div id="black"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="bike" class="col-xl-7 bike-content"></div>
+        </div>
+      </div>
+
+      <script>
+        let redBtn = document.getElementById('red');
+        let blueBtn = document.getElementById('blue');
+        let blackBtn = document.getElementById('black');
+        let bike = document.getElementById('bike');
+
+        redBtn.onclick = function(){
+          bike.style.backgroundImage = "url(images/BMW1.png)";
+        }
+        blueBtn.onclick = function(){
+          bike.style.backgroundImage = "url(images/BMW2.png)";
+        }
+        blackBtn.onclick = function(){
+          bike.style.backgroundImage = "url(images/BMW3.png)";
+        }
+      </script>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
